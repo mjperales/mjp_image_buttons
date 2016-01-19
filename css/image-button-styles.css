@@ -1,0 +1,70 @@
+/*********************
+CLEARFIXIN'
+*********************/
+
+/* Contain floats: nicolasgallagher.com/micro-clearfix-hack/ */
+.widget_tcu_image_button {
+  zoom: 1;
+}
+
+.widget_tcu_image_button:before, .widget_tcu_image_button:after { content: ""; display: table; }
+.widget_tcu_image_button:after { clear: both; }
+
+/* Style of the main purple button on top of the image */
+.btn {
+    color: #fff !important;
+    font-size: 1.75rem;
+    padding: .5em 1em;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.button-home {
+  background-color: #4d1979;
+  color: #FFF !important;
+  padding: 0.5em 1.5em;
+  z-index: 3;
+}
+
+.button-home:hover {
+    background-color: #777777;
+    text-decoration: none;
+}
+
+.btn-text {
+    font-size: 1.1rem;
+}
+
+/* class that has images tags inside element */
+.btn-image {
+	/* removing padding that is added by parent class */
+    background-size: cover;
+    height: auto;
+    width: 100%;
+	padding: 0;
+	overflow: hidden;
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+}
+
+.btn:hover .btn-image__hover {
+	opacity: 1;
+	transform: scale( 1, 1);
+}
+
+/* display on hover */
+.btn-image__hover {
+	background-color: rgba(77, 25, 121, 0.4);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity:0;
+    transform: scale(0, 0);
+    transition: all 0.4s ease-out 0.3s;
+    z-index: 0;
+}

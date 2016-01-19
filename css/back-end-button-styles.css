@@ -1,0 +1,17 @@
+.tcu-image-widget {
+	width: 98%;
+}
+.tcu-image-button-container img {
+	max-width: 100%;
+	margin: 2em auto !important;
+	max-height: 300px;
+}
+
+.tcu-image-button-clear-image {
+	font-size: 10px;
+}
+
+.tcu-image-button-upload {
+	margin-top: 1em !important;
+	margin-bottom: 1em !important;
+}
